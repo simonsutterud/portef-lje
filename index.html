@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Min portefølje</title>
+  </head>
+  <nav id="navbar">
+    <div class="left-side">
+      <a href="#">Simon Sutterud</a>
+    </div>
+    <div class="right side">
+      <ul>
+        <li><a href="#">Hjem</a></li>
+        <li><a href="#music-section">Om meg</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Portefølje</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="particles-js"></div>
+  <header id="hero">
+    <div class="hero-container">
+      <h1 id="hero-text"></h1>
+    </div>
+    <div class="image-container">
+      <img src="images/Simon Scale.jpg" class="me" />
+    </div>
+    <h2 class="hero-subtext">
+      Klikk her for å lese mer om meg, og hva jeg driver med:
+    </h2>
+    <div class="hero-icon-container">
+      <a href="#music-section"><i class="fas fa-angle-double-down"></i></a>
+    </div>
+  </header>
+  <body>
+    <div id="music-section">
+      <div class="music-header-container">
+        <h1>Jeg produserer <span>musikk.</span></h1>
+        <h3>For det meste på bestilling.</h3>
+      </div>
+      <div class="music-stats-container">
+        <div class="stats-wrapper">
+          <div class="projects">
+            <i class="far fa-handshake"></i>
+            <h2>60+ leverte prosjekter</h2>
+          </div>
+          <div class="plays">
+            <i class="fas fa-chart-bar"></i>
+            <h2>Over 4 000 000 avspillinger</h2>
+          </div>
+          <div class="listeners">
+            <i class="fas fa-user-friends"></i>
+            <h2>Mer enn 350 000 unike lyttere</h2>
+          </div>
+        </div>
+      </div>
+      <!--<div class="canvas-section">
+        <div class="canvas-container">
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+      </div> -->
+      <div class="music-p-container">
+        <p>
+          Trenger du en låt, eller kanskje en melodi til en reklame eller
+          podcast? Ta kontakt <a href="mailto:siasmusic@hotmail.com">her</a>.
+        </p>
+      </div>
+      <div class="music-icon-container">
+        <a href="#work-section"><i class="fas fa-angle-double-down"></i></a>
+      </div>
+    </div>
+    <div id="work-section">
+      <div class="work-header-container">
+        <h1>
+          Jeg er med på å utvikle verdens enkleste
+          <br />nettbutikkplattform, hos Scale Development.
+        </h1>
+        <h2>
+          Mer om hva vi driver med i Scale, finner du på
+          <a href="https://scaledev.io" target="blank">scaledev.io</a>
+        </h2>
+      </div>
+      <div class="work-rest-container"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"
+      integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      particlesJS.load("particles-js", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
